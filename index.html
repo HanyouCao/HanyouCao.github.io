@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的网站</title>
+    <title>机械臂与AI实验展示</title>
+    <style>
+        .video-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎访问~</h1>
-</body>
-<body>
-    <iframe 
-        src="https://player.bilibili.com/player.html?bvid=BV1CiMPzXEVF" 
-        scrolling="no" 
-        border="0"
-        frameborder="no" 
-        framespacing="0" 
-        allowfullscreen="true"
-        width="800" 
-        height="450">
-    </iframe>
-</body>
-<body>
-    <h1>操作so100机械臂录取数据</h1>
-</body>
-<body>
-    <iframe 
-        src="https://player.bilibili.com/player.html?bvid=BV1YoMPzuEq2" 
-        scrolling="no" 
-        border="0"
-        frameborder="no" 
-        framespacing="0" 
-        allowfullscreen="true"
-        width="800" 
-        height="450">
-    </iframe>
-</body>
-<body>
-    <h1>部署act算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</h1>
-</body>
-<body>
-    <iframe 
-        src="https://player.bilibili.com/player.html?bvid=BV1x3MNzfEvH" 
-        scrolling="no" 
-        border="0"
-        frameborder="no" 
-        framespacing="0" 
-        allowfullscreen="true"
-        width="800" 
-        height="450">
-    </iframe>
-</body>
-<body>
-    <h1>GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</h1>
+    <!-- 视频1 -->
+    <div class="video-section">
+        <h1>欢迎访问~</h1>
+        <div class="video-container">
+            <iframe 
+                src="https://player.bilibili.com/player.html?bvid=BV1CiMPzXEVF" 
+                scrolling="no"
+                frameborder="no"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </div>
+    
+    <!-- 视频2 -->
+    <div class="video-section">
+        <h1>操作so100机械臂录取数据</h1>
+        <div class="video-container">
+            <iframe 
+                src="https://player.bilibili.com/player.html?bvid=BV1YoMPzuEq2" 
+                scrolling="no"
+                frameborder="no"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </div>
+    
+    <!-- 视频3 -->
+    <div class="video-section">
+        <h1>部署act算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</h1>
+        <div class="video-container">
+            <iframe 
+                src="https://player.bilibili.com/player.html?bvid=BV1x3MNzfEvH" 
+                scrolling="no"
+                frameborder="no"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </div>
+    
+    <!-- 额外说明 -->
+    <div class="video-section">
+        <h1>GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</h1>
+        <p style="color:#666; font-style:italic;">注：本部分为技术说明，无对应视频</p>
+    </div>
 </body>
 </html>
