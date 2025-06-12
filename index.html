@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>机械臂与AI实验展示</title>
+    <title>hanyou项目</title>
     <style>
         /* 整体样式优化 */
         body {
@@ -13,6 +13,7 @@
             background-color: #f5f7fa;
             margin: 0;
             padding: 20px;
+            text-align: center; /* 新增：全局文本居中 */
         }
         
         /* 统一容器样式 */
@@ -23,6 +24,9 @@
             border-radius: 12px;
             padding: 30px;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 新增：子元素水平居中 */
         }
         
         /* 视频区块优化 */
@@ -30,6 +34,7 @@
             margin-bottom: 50px;
             padding-bottom: 30px;
             border-bottom: 1px solid #eaeaea;
+            width: 100%; /* 新增：确保宽度填满父容器 */
         }
         
         .video-section:last-child {
@@ -38,20 +43,21 @@
             border-bottom: none;
         }
         
-        /* 标题优化 */
+        /* 标题优化 - 全部居中 */
         h1 {
             font-size: 1.8em;
             margin: 0 0 20px 0;
             color: #2c3e50;
             font-weight: 600;
             line-height: 1.4;
-            text-align: center;
+            text-align: center; /* 确保标题居中 */
+            width: 100%; /* 新增：保证居中宽度 */
         }
         
-        /* 长标题特殊处理 */
+        /* 长标题特殊处理 - 已改为居中 */
         .long-title {
             font-size: 1.4em;
-            text-align: left;
+            text-align: center; /* 修改：左对齐改为居中 */
             padding: 0 10px;
         }
         
@@ -77,9 +83,10 @@
         
         /* 额外说明优化 */
         .note-section {
-            text-align: center;
             padding: 25px 0 10px;
             margin-top: 10px;
+            text-align: center; /* 确保文本居中 */
+            width: 100%; /* 新增：保证居中宽度 */
         }
         
         .note-section h1 {
@@ -91,6 +98,7 @@
             font-style: italic;
             font-size: 1.1em;
             padding: 0 10px;
+            text-align: center; /* 新增：确保注释文本居中 */
         }
         
         /* 响应式优化 */
