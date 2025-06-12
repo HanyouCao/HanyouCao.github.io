@@ -61,13 +61,6 @@
             width: 100%;
         }
         
-        /* 长标题特殊处理 */
-        .long-title {
-            font-size: 1.4em;
-            text-align: center;
-            padding: 0 10px;
-        }
-        
         /* 视频容器优化 */
         .video-container {
             position: relative;
@@ -88,16 +81,20 @@
             border: none;
         }
         
-        /* 额外说明优化 */
-        .note-section {
-            padding: 25px 0 10px;
-            margin-top: 10px;
+        /* 视频描述文本样式 */
+        .video-description {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.7;
+            margin: 15px auto 0;
+            max-width: 800px;
+            padding: 0 15px;
             text-align: center;
-            width: 100%;
         }
         
-        .note-section h1 {
-            margin-bottom: 15px;
+        .long-description {
+            font-size: 0.85em;
+            padding: 0 10px;
         }
         
         /* 响应式优化 */
@@ -110,18 +107,17 @@
                 font-size: 1.5em;
             }
             
-            .long-title {
-                font-size: 1.2em;
-            }
-            
             .video-container iframe {
                 height: 300px;
             }
-        }
-        
-        /* 缩小样式 */
-        .smaller-text {
-            font-size: 0.85em;
+            
+            .video-description {
+                font-size: 0.85em;
+            }
+            
+            .long-description {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -134,7 +130,6 @@
         
         <!-- 视频1区块 -->
         <div class="video-section">
-            <h1 class="smaller-text">项目介绍视频</h1>
             <div class="video-container">
                 <iframe 
                     src="https://player.bilibili.com/player.html?bvid=BV1CiMPzXEVF" 
@@ -143,11 +138,11 @@
                     allowfullscreen="true">
                 </iframe>
             </div>
+            <p class="video-description">GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</p>
         </div>
         
         <!-- 视频2区块 -->
         <div class="video-section">
-            <h1 class="smaller-text">操作so100机械臂录取数据</h1>
             <div class="video-container">
                 <iframe 
                     src="https://player.bilibili.com/player.html?bvid=BV1YoMPzuEq2" 
@@ -156,11 +151,11 @@
                     allowfullscreen="true">
                 </iframe>
             </div>
+            <p class="video-description">操作so100机械臂录取数据</p>
         </div>
         
         <!-- 视频3区块 -->
         <div class="video-section">
-            <h1 class="long-title smaller-text">部署ACT算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</h1>
             <div class="video-container">
                 <iframe 
                     src="https://player.bilibili.com/player.html?bvid=BV1x3MNzfEvH" 
@@ -169,11 +164,7 @@
                     allowfullscreen="true">
                 </iframe>
             </div>
-        </div>
-        
-        <!-- 额外说明区块 -->
-        <div class="note-section">
-            <h1 class="smaller-text">GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</h1>
+            <p class="video-description long-description">部署ACT算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</p>
         </div>
     </div>
 </body>
