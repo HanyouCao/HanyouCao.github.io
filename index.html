@@ -13,7 +13,7 @@
             background-color: #f5f7fa;
             margin: 0;
             padding: 20px;
-            text-align: center; /* 新增：全局文本居中 */
+            text-align: center;
         }
         
         /* 统一容器样式 */
@@ -26,7 +26,7 @@
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
-            align-items: center; /* 新增：子元素水平居中 */
+            align-items: center;
         }
         
         /* 视频区块优化 */
@@ -34,7 +34,7 @@
             margin-bottom: 50px;
             padding-bottom: 30px;
             border-bottom: 1px solid #eaeaea;
-            width: 100%; /* 新增：确保宽度填满父容器 */
+            width: 100%;
         }
         
         .video-section:last-child {
@@ -50,14 +50,14 @@
             color: #2c3e50;
             font-weight: 600;
             line-height: 1.4;
-            text-align: center; /* 确保标题居中 */
-            width: 100%; /* 新增：保证居中宽度 */
+            text-align: center;
+            width: 100%;
         }
         
         /* 长标题特殊处理 - 已改为居中 */
         .long-title {
             font-size: 1.4em;
-            text-align: center; /* 修改：左对齐改为居中 */
+            text-align: center;
             padding: 0 10px;
         }
         
@@ -85,20 +85,12 @@
         .note-section {
             padding: 25px 0 10px;
             margin-top: 10px;
-            text-align: center; /* 确保文本居中 */
-            width: 100%; /* 新增：保证居中宽度 */
+            text-align: center;
+            width: 100%;
         }
         
         .note-section h1 {
             margin-bottom: 15px;
-        }
-        
-        .note-text {
-            color: #666;
-            font-style: italic;
-            font-size: 1.1em;
-            padding: 0 10px;
-            text-align: center; /* 新增：确保注释文本居中 */
         }
         
         /* 响应式优化 */
@@ -119,11 +111,16 @@
                 height: 300px;
             }
         }
+        
+        /* 新增缩小样式 */
+        .smaller-text {
+            font-size: 0.85em; /* 使用相对单位缩小文字 */
+        }
     </style>
 </head>
 <body>
     <div class="content-container">
-        <!-- 视频1 -->
+        <!-- 视频1 - 保持原大小 -->
         <div class="video-section">
             <h1>欢迎访问~</h1>
             <div class="video-container">
@@ -136,9 +133,9 @@
             </div>
         </div>
         
-        <!-- 视频2 -->
+        <!-- 视频2 - 缩小一号 -->
         <div class="video-section">
-            <h1>操作so100机械臂录取数据</h1>
+            <h1 class="smaller-text">操作so100机械臂录取数据</h1>
             <div class="video-container">
                 <iframe 
                     src="https://player.bilibili.com/player.html?bvid=BV1YoMPzuEq2" 
@@ -149,9 +146,9 @@
             </div>
         </div>
         
-        <!-- 视频3 -->
+        <!-- 视频3 - 缩小一号 -->
         <div class="video-section">
-            <h1 class="long-title">部署ACT算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</h1>
+            <h1 class="long-title smaller-text">部署ACT算法，让so100机械臂用袋子向右扫除红色方块。其中shoulder lift和elbow flex关节不幸损坏，观察其动作是在尝试按住袋子并向右移动，但因关节失灵没有成功按住袋子，若关节未损坏应可以完成任务</h1>
             <div class="video-container">
                 <iframe 
                     src="https://player.bilibili.com/player.html?bvid=BV1x3MNzfEvH" 
@@ -162,10 +159,9 @@
             </div>
         </div>
         
-        <!-- 额外说明 -->
+        <!-- 额外说明 - 缩小一号并移除注释 -->
         <div class="note-section">
-            <h1>GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</h1>
-            <p class="note-text">注：本部分为技术说明，无对应视频</p>
+            <h1 class="smaller-text">GPT4-based agent在两个小时内学会了制作石镐，避雷针，炼铜，铸剑等诸多技能</h1>
         </div>
     </div>
 </body>
